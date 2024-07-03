@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title_loai_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brow"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Thêm loại coffee"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_name_loai_coffee"
+        app:endIconMode="clear_text"
+        android:hint="Tên loại coffee"
+        app:hintTextColor = "@color/brow"
+        android:textColorHint = "@color/brow"
+        app:boxStrokeColor = "@color/brow"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_name_loai_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/brow"
+            app:backgroundTint="#c4c4c4"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/btn_dialog_cancle_loai_coffee"
+            android:textStyle="bold"
+            android:text="Huỷ"/>
+
+        <Button
+            android:id="@+id/btn_dialog_add_loai_coffee"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Thêm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brow" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

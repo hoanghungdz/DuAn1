@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_coffee"
+        android:icon="@drawable/coffee"
+        android:title="Quản lý Coffee"/>
+
+    <item android:id="@+id/nav_loaiCoffee"
+        android:icon="@drawable/coffee"
+        android:title="Quản lý loại coffee "/>
+    <item android:id="@+id/nav_donHang"
+        android:icon="@drawable/grocery"
+        android:title="Quản lý đơn hàng"/>
+    <item android:id="@+id/nav_DoanhThu"
+        android:icon="@drawable/money"
+        android:title="Doanh thu"/>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Người dùng">
+            <menu>
+                <item android:id="@+id/nav_DangXuat"
+                    android:icon="@drawable/logout"
+                    android:title="Đăng xuất"/>
+            </menu>
+        </item>
+    </group>
+</menu>
